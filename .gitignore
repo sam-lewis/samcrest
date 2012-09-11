@@ -7,4 +7,9 @@
 
 # Project Files #
 *.iml
+*.ipr
+*.iws
 .idea/**
+
+# Maven Output #
+target/**
