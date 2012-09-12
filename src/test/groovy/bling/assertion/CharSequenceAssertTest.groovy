@@ -4,7 +4,7 @@ import spock.lang.Specification
 
 import static bling.assertion.Assert.assertThat
 
-class StringAssertTest extends Specification {
+class CharSequenceAssertTest extends Specification {
 
     def "check isNullOrEmpty() failure"() {
         when:
@@ -12,7 +12,7 @@ class StringAssertTest extends Specification {
 
         then:
         def e = thrown(AssertionFailure)
-        e.message == "[$value] was not null or empty"
+        e.message == "[$value] is not null or empty"
 
         where:
         value << [" ", "abc"]

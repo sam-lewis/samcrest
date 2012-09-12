@@ -54,7 +54,7 @@ class ObjectAssertTest extends Specification {
 
         then:
         def e = thrown(AssertionFailure)
-        e.message == "Objects are not equal"
+        e.message == "objects are not equal"
 
         where:
         object1      | object2

@@ -15,4 +15,8 @@ public class AssertionFailure extends RuntimeException {
             fail(message, args);
         }
     }
+
+    public static void failWhenFalse(boolean condition, String message, Object... args) {
+        failWhen(!condition, message, args);
+    }
 }
