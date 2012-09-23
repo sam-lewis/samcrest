@@ -55,6 +55,11 @@ public class BigDecimalAssertion extends Assertion<BigDecimalAssertion, BigDecim
     }
 
     @Override
+    public BigDecimalAssertion isNotANumber() {
+        isNotNull();
+    }
+
+    @Override
     protected BigDecimalAssertion me() {
         return this;
     }

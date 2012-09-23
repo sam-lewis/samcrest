@@ -2,17 +2,17 @@ package bling.assertion.assertions;
 
 public interface NumberAssertion<T extends Assertion<T, V>, V> {
 
-    public T isGreaterThan(V number);
+    T isGreaterThan(V number);
 
-    public T isGreaterThanOrEqualTo(V number);
+    T isGreaterThanOrEqualTo(V number);
 
-    public T isLessThan(V number);
+    T isLessThan(V number);
 
-    public T isLessThanOrEqualTo(V number);
+    T isLessThanOrEqualTo(V number);
 
-    public T isPositive();
+    T isPositive();
 
-    public T isNegative();
+    T isNegative();
 
-    public T isZero();
+    T isZero();
 }

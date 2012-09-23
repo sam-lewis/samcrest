@@ -57,6 +57,14 @@ public abstract class Assertion<T extends Assertion<T, V>, V> {
         return me();
     }
 
+    public T hasToString(String string) {
+        isNotNull();
+
+        failWhenFalse(Objects.equal(value().toString(), string), "expected toString() [%s], actual [%s]", string, value().toString());
+
+        return me();
+    }
+
 
     @Override
     public final boolean equals(Object obj) {
