@@ -1,6 +1,3 @@
-samcrest
-========
-
 about
 -----
 A java assertion library inspired by Hamcrest and FEST. 
